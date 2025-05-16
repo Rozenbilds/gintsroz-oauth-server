@@ -1,9 +1,6 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "astro.config.mjs", "use": "@vercel/node" }
-  ],
-  "routes": [
-    { "src": "/.*", "dest": "/astro.config.mjs" }
-  ]
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "other"
 }
+Fix: specify framework as "other"

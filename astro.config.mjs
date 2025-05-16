@@ -1,6 +1,7 @@
 import { defineConfig } from "astro/config";
-import oauth from "astro-decap-cms-oauth";
+import decapCmsOauth from "astro-decap-cms-oauth";
 
 export default defineConfig({
-  integrations: [oauth()]
+  integrations: [decapCmsOauth()],
+  output: "server"
 });
